@@ -1,0 +1,22 @@
+{
+  "name": "jesusslim/kos",
+  "description": "php container/di",
+  "license": "MIT",
+  "keywords": ["di","container"],
+  "version": "1.0",
+  "authors": [
+    {
+      "name": "jesusslim",
+      "email": "755808379@qq.com"
+    }
+  ],
+  "require": {
+    "php": ">=5.6.0"
+  },
+  "minimum-stability": "dev",
+  "autoload": {
+    "psr-4": {
+      "kos\\": "src/"
+    }
+  }
+}
