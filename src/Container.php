@@ -105,9 +105,9 @@ class Container
                 $result[] = $params[$param->name];
             }else{
                 $class = $param->getClass();
-                if (is_null($class)) $class = $param->name;
-                if ($this->isMapped($class)){
-                    $value = $this->get($class);
+                $class_name = is_null($class) ? $param->name : $class->name;
+                if ($this->isMapped($class_name)){
+                    $value = $this->get($class_name);
                 }elseif($param->isDefaultValueAvailable()){
                     $value = $param->getDefaultValue();
                 }else{
